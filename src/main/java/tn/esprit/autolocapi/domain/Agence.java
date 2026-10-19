@@ -22,4 +22,5 @@ public class Agence {
     private String ville;
     private String adresse;
     private String telephone;
+
 }

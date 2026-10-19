@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name="vehicule")
@@ -27,5 +29,7 @@ public class Vehicule {
     private BigDecimal tarifJournalier;
     @Enumerated(EnumType.STRING)
     private StatutVehicule statut;
+    @ManyToMany
+    List<Equipement> equipements=new ArrayList<>();
 
 }
